@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<body style="background: rgb(33, 16, 58);" onload="JavascriptObject()">
+    <div class="canvas">
+        <div class="backgroundWall">
+            <div class="window" id="top"></div>
+        </div>
+        <div class="desk"></div>
+        <div class="tableContent">
+            <img src="AboutMe.png" class="potrait" id="contact">
+        </div>
+        <div class="center">
+            <div class="monitor">
+                <img src="Potrait.png" class="aboutMe">
+                    <button class="w3-button w3-red" id="profile" style="
+                    font-family: 'mini-wakuwaku';
+                    border: transparent;
+                    position: absolute;
+                    top: 65%;
+                    left: 20%;
+                    ">About Me</button>
+                    <button class="w3-button w3-red" id="skills" style="
+                    font-family: 'mini-wakuwaku';
+                    border: transparent;
+                    position: absolute;
+                    top: 65%;
+                    left: 40%;
+                    ">Skills</button>
+                    <button class="w3-button w3-red" id="projects" style="
+                    font-family: 'mini-wakuwaku';
+                    border: transparent;
+                    position: absolute;
+                    top: 65%;
+                    left: 55%;
+                    ">Artworks</button>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container1" id="one">
+            <P style="color: rgb(100, 67, 81);">About Me
+                <br>
+            <img src="Potrait.png" class="image">
+            </P>
+            <div id="obj" style=
+            "font-family: 'mini-wakuwaku'; 
+            font-size: 30px; 
+            padding-left: 10%; 
+            position: absolute;"></div>
+
+            <div id="note" class="container pt-3" style=
+            "background-color: rgb(255, 237, 72); 
+            width: 80%; 
+            height: 40%; 
+            position: relative;
+            font-family: 'mini-wakuwaku'; 
+            font-size: 60px;
+            ">Click on this sticky note to see my profile :)</div>
+        </div>
+        <div class="container1" id="two" style="background: white;">
+            <P style="color: rgb(230, 11, 102);">Soft Skill & Hard Skill
+                <br>
+                <div style="padding-top: 10%; padding-left: 5%; padding-right: 5%;">
+                    <P style="color: rgb(230, 11, 102); font-size: 20px;">Hard Skills</P>
+                    <div class="progress" style="height:30px">
+                        <div class="progress-bar bg-danger" style="width:40%;height:30px;font-family: 'mini-wakuwaku';"> Video Editing</div>
+                    </div>
+                    <br>
+                    <div class="progress" style="height:30px;">
+                        <div class="progress-bar bg-danger" style="width:70%;height:30px;font-family: 'mini-wakuwaku'"> Photoshop </div>
+                    </div>
+                    <br>
+                    <div class="progress" style="height:30px">
+                        <div class="progress-bar bg-danger" style="width:60%;height:30px;font-family: 'mini-wakuwaku'"> Web Design</div>
+                    </div>
+                    
+                    
+                    <P style="color: rgb(230, 11, 102); font-size: 20px; padding-top: 10%;">Soft Skills</P>
+                    <div class="progress" style="height:30px">
+                        <div class="progress-bar bg-danger" style="width:80%;height:30px;font-family: 'mini-wakuwaku';"> Communication</div>
+                    </div>
+                    <br>
+                    <div class="progress" style="height:30px;">
+                        <div class="progress-bar bg-danger" style="width:60%;height:30px;font-family: 'mini-wakuwaku'"> Team Work </div>
+                    </div>
+                    <br>
+                    <div class="progress" style="height:30px">
+                        <div class="progress-bar bg-danger" style="width:90%;height:30px;font-family: 'mini-wakuwaku'"> Creativity </div>
+                    </div>
+
+
+                    <P style="color: rgb(230, 11, 102); font-size: 20px; padding-top: 10%;">Programming</P>
+                    <div class="progress" style="height:30px">
+                        <div class="progress-bar bg-danger" style="width:60%;height:30px;font-family: 'mini-wakuwaku';"> Visual Basic</div>
+                    </div>
+                    <br>
+                    <div class="progress" style="height:30px;">
+                        <div class="progress-bar bg-danger" style="width:75%;height:30px;font-family: 'mini-wakuwaku'"> Flutter </div>
+                    </div>
+                    <br>
+                    <div class="progress" style="height:30px">
+                        <div class="progress-bar bg-danger" style="width:50%;height:30px;font-family: 'mini-wakuwaku'"> C++ </div>
+                    </div>
+                </div>
+            </P>
+        </div>
+        <div class="container1" id="three">
+            <P style="color: rgb(100, 67, 81);">Artworks
+                <br>
+            </P>
+            <div id="demo" class="carousel slide" data-ride="carousel" style="width: 95%; left: 2.5%;">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                  <li data-target="#demo" data-slide-to="3"></li>
+                  <li data-target="#demo" data-slide-to="4"></li>
+                </ul>
+              
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="illust.jpg" alt="1" style="width: 100%">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="illust1.jpg" alt="2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="illust2.jpg" alt="3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="illust3.png" alt="4">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="illust5.jpg" alt="5">
+                  </div>
+                </div>
+              
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              
+              </div>
+        </div>
+        <div class="container1" id="four">
+            <P style="color: rgb(100, 67, 81);">projects
+                <br>
+            </P>
+            <a style="text-decoration: none;" href="https://seaberuang.github.io/dressUp/">
+                <div class="container pt-3" style=
+                "background-color: rgb(255, 237, 72); 
+                width: 80%; 
+                height: 40%; 
+                position: relative;
+                font-family: 'mini-wakuwaku'; 
+                font-size: 60px;
+                ">Do you wanna see my project?</div>
+            </a>
+        </div>
+        <div id="contactMe" class="contactMe">
+            <img src="phone.png">
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js%22%3E"></script>
+    <script src="pageScript.js">
+    </script>
+    <script>
+        
+    </script>
+</body>
+</html>
